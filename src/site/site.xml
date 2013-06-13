@@ -58,6 +58,7 @@
 				<item name="LoggerAppenderRollingFile" href="/docs/appenders/rolling-file.html" />
 				<item name="LoggerAppenderSocket" href="/docs/appenders/socket.html" />
 				<item name="LoggerAppenderSyslog" href="/docs/appenders/syslog.html" />
+				<item name="LoggerAppenderRemoteSyslog" href="/docs/appenders/remote-syslog.html" />
 			</item>
 			<item name="Layouts" href="/docs/layouts.html" collapse="true">
 				<item name="LoggerLayoutHtml" href="/docs/layouts/html.html" />

@@ -93,6 +93,10 @@
 							<td><a href="appenders/syslog.html">LoggerAppenderSyslog</a></td>
 							<td>Syslog.</td>
 						</tr>
+						<tr>
+							<td><a href="appenders/syslog.html">LoggerAppenderRemoteSyslog</a></td>
+							<td>Remote Syslog.</td>
+						</tr>
 						
 					</tbody>
 				</table>

@@ -112,19 +112,19 @@ class LoggerAppenderSyslog extends LoggerAppender {
 	 * Holds the int value of the {@link $priority}.
 	 * @var int
 	 */
-	private $intPriority;
+	protected $intPriority;
 	
 	/**
 	 * Holds the int value of the {@link $facility}.
 	 * @var int
 	 */
-	private $intFacility;
+	protected $intFacility;
 	
 	/**
 	 * Holds the int value of the {@link $option}.
 	 * @var int
 	 */
-	private $intOption;
+	protected $intOption;
 
 	/**
 	 * Sets the {@link $ident}.
@@ -251,7 +251,7 @@ class LoggerAppenderSyslog extends LoggerAppender {
 	}
 	
 	/** Determines which syslog priority to use based on the given level. */
-	private function getSyslogPriority(LoggerLevel $level) {
+	protected function getSyslogPriority(LoggerLevel $level) {
 		if($this->overridePriority) {
 			return $this->intPriority;
 		}
@@ -259,7 +259,7 @@ class LoggerAppenderSyslog extends LoggerAppender {
 	}
 	
 	/** Parses a syslog option string and returns the correspodning int value. */
-	private function parseOption() {
+	protected function parseOption() {
 		$value = 0;
 		$options = explode('|', $this->option);
 	
@@ -277,7 +277,7 @@ class LoggerAppenderSyslog extends LoggerAppender {
 	}
 	
 	/** Parses the facility string and returns the corresponding int value. */
-	private function parseFacility() {
+	protected function parseFacility() {
 		if (!empty($this->facility)) {   
 			$constant = "LOG_" . trim($this->facility);
 			if (defined($constant)) {
@@ -289,7 +289,7 @@ class LoggerAppenderSyslog extends LoggerAppender {
 	}
 
 	/** Parses the priority string and returns the corresponding int value. */
-	private function parsePriority() {
+	protected function parsePriority() {
 		if (!empty($this->priority)) {
 			$constant = "LOG_" . trim($this->priority);
 			if (defined($constant)) {

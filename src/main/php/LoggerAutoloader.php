@@ -68,6 +68,7 @@ class LoggerAutoloader {
 		'LoggerAppenderRollingFile' => '/appenders/LoggerAppenderRollingFile.php',
 		'LoggerAppenderSocket' => '/appenders/LoggerAppenderSocket.php',
 		'LoggerAppenderSyslog' => '/appenders/LoggerAppenderSyslog.php',
+		'LoggerAppenderRemoteSyslog' => '/appenders/LoggerAppenderRemoteSyslog.php',
 		
 		// Configurators
 		'LoggerConfigurationAdapter' => '/configurators/LoggerConfigurationAdapter.php',
